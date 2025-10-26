@@ -1,0 +1,21 @@
+User-agent: *
+# Disallow: /admin/
+Allow: /
+
+
+
+# Sitemap
+Sitemap: https://awoffers.com/sitemaps/index.xml
+
+
+
+# Delay agar server tidak overload
+Crawl-delay: 10
+
+
+
+# Blokir parameter URL yang tidak penting (optional)
+# Disallow: /*?replytocom
+# Disallow: /*?utm_source
+# Disallow: /*?utm_medium
+# Disallow: /*?utm_campaign
