@@ -178,6 +178,19 @@
     
     });
   </script>
+  
+  <script>
+		const params = new URLSearchParams(window.location.search);
+    const base64Link = params.get('r');
+    if (base64Link) {
+      const originalLink = atob(base64Link);
+      window.location.href = originalLink;
+    }
+    const redirect = params.get('redirect');
+    if (redirect) {
+      window.location.href = redirect;
+    }
+  </script>
 
 </body>
 </html>
