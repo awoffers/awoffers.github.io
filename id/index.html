@@ -1,204 +1,201 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Temukan penawaran terbaik dan kode kupon eksklusif dari berbagai pedagang di Awoffers. Hemat uang dengan penawaran terbaru setiap hari!" />
-  <meta name="keywords" content="awoffers, kode kupon, promo terbaru, penawaran diskon, kupon belanja, kupon online, diskon toko online, promo hari ini, kupon gratis ongkir, belanja hemat, promo perjalanan, kupon perjalanan, diskon perjalanan" />
-  <meta name="author" content="Awoffers" />
-  <meta name="agd-partner-manual-verification" />
-
-  <title>Awoffers</title>
-
-  <!-- Bootstrap 5.2.3 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons 1.10.5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-    }
-    .hero {
-      background: linear-gradient(to right, #f8f9fa, #e9ecef);
-      padding: 100px 0;
-      text-align: center;
-    }
-    .hero img {
-      max-width: 120px;
-      margin-bottom: 20px;
-    }
-    .coupon-card {
-      border: 1px solid #dee2e6;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    .expired {
-      color: red;
-      font-weight: bold;
-    }
-    footer {
-      background-color: #f8f9fa;
-      padding: 20px 0;
-    }
-  </style>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Temukan penawaran terbaik dan kode kupon eksklusif dari berbagai pedagang di Awoffers. Hemat uang dengan penawaran terbaru setiap hari!" />
+	<meta name="keywords" content="awoffers, kode kupon, promo terbaru, penawaran diskon, kupon belanja, kupon online, diskon toko online, promo hari ini, kupon gratis ongkir, belanja hemat, promo perjalanan, kupon perjalanan, diskon perjalanan" />
+	<meta name="author" content="Awoffers" />
+	<meta name="agd-partner-manual-verification" />
+	
+	<title>Awoffers</title>
+	
+	<!-- Bootstrap 5.2.3 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap Icons 1.10.5 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+	
+	<style>
+		body {
+			font-family: 'Segoe UI', sans-serif;
+		}
+		.hero {
+			background: linear-gradient(to right, #f8f9fa, #e9ecef);
+			padding: 100px 0;
+			text-align: center;
+		}
+		.hero img {
+			max-width: 120px;
+			margin-bottom: 20px;
+		}
+		.coupon-card {
+			border: 1px solid #dee2e6;
+			border-radius: 10px;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+		.expired {
+			color: red;
+			font-weight: bold;
+		}
+		footer {
+			background-color: #f8f9fa;
+			padding: 20px 0;
+		}
+	</style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
-    <div class="container">
-      <a class="navbar-brand" id="logoIndonesia" href="#"><i class="bi bi-globe2"></i> Awoffers</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" id="homeIndonesia" href="#">Beranda</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Bahasa</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" id="English" href="#">English</a></li>
-              <li><a class="dropdown-item" id="Indonesia" href="#">Indonesia</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tentang</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="https://awoffers.com/id/about.html">Tentang Awoffers</a></li>
-              <li><a class="dropdown-item" href="https://awoffers.com/id/privacy-policy.html">Kebijakan Privasi</a></li>
-              <li><a class="dropdown-item" href="https://awoffers.com/id/terms-and-conditions.html">Syarat Dan Ketentuan</a></li>
-              <li><a class="dropdown-item" href="https://awoffers.com/sitemaps/index.xml">Peta Situs</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pedagang</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="https://awoffers.com/id/merchants.html">Semua Pedagang</a></li>
-              <li><a class="dropdown-item" href="https://awoffers.com/id/agoda.html">Agoda</a></li>
-              <li><a class="dropdown-item" href="https://awoffers.com/id/alibaba.com.html">Alibaba.com</a></li>
-              <li><a class="dropdown-item" href="https://awoffers.com/id/amazon.com.html">Amazon.com</a></li>
-              <li><a class="dropdown-item" href="https://awoffers.com/id/booking.com.html">Booking.com</a></li>
-			  <li><a class="dropdown-item" href="https://awoffers.com/id/busonlineticket.com.html">BusOnlineTicket.com</a></li>
-              <li><a class="dropdown-item" href="https://awoffers.com/id/cheapoair.html">CheapOair</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1 class="display-5"><b>Awoffers</b></h1>
-      <p class="lead">Tempat penawaran dan kode kupon dari berbagai pedagang.</p>
-    </div>
-  </section>
-
-  <!-- Konten -->
-  <section class="container py-5">
-  
-    <div class="coupon-card">
-      <h5><i class="bi bi-tag-fill text-primary"></i> Agoda</h5>
-      <p>Agoda adalah perusahaan Internet yang menyediakan layanan reservasi properti hotel atau resor secara online yang difokuskan terutama untuk kawasan Asia Pasifik,dengan basis operasional yang berada di Bangkok, Singapura, dan Filipina.</p>
-      <a href="https://awoffers.com/id/agoda.html" class="btn btn-outline-primary">Lihat Penawaran & Kode Kupon</a>
-    </div>
-
-    <div class="coupon-card">
-      <h5><i class="bi bi-tag-fill text-primary"></i> Alibaba.com</h5>
-      <p>Alibaba.com adalah platform e-commerce Bisnis-ke-Bisnis (B2B) global, didirikan pada tahun 1999 oleh Jack Ma, yang menghubungkan jutaan pembeli dan pemasok di seluruh dunia untuk memfasilitasi perdagangan grosir.</p>
-      <a href="https://awoffers.com/id/alibaba.com.html" class="btn btn-outline-primary">Lihat Penawaran & Kode Kupon</a>
-    </div>
-
-    <div class="coupon-card">
-      <h5><i class="bi bi-tag-fill text-primary"></i> Amazon.com</h5>
-      <p>Amazon.com adalah perusahaan teknologi multinasional Amerika yang mengkhususkan diri dalam perdagangan elektronik, komputasi awan, dan streaming digital, dan merupakan salah satu pengecer daring terbesar di dunia.</p>
-      <a href="https://awoffers.com/id/amazon.com.html" class="btn btn-outline-primary">Lihat Penawaran & Kode Kupon</a>
-    </div>
-
-    <div class="coupon-card">
-      <h5><i class="bi bi-tag-fill text-primary"></i> Booking.com</h5>
-      <p>Booking.com adalah agen perjalanan online (OTA) besar yang menghubungkan wisatawan dengan penawaran akomodasi, transportasi, dan tur dari seluruh dunia.</p>
-      <a href="https://awoffers.com/id/booking.com.html" class="btn btn-outline-primary">Lihat Penawaran & Kode Kupon</a>
-    </div>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+		<div class="container">
+			<a class="navbar-brand" id="logoIndonesia" href="#"><i class="bi bi-globe2"></i> Awoffers</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="mainNavbar">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link active" id="homeIndonesia" href="#">Beranda</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Bahasa</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" id="English" href="#">English</a></li>
+							<li><a class="dropdown-item active" id="Indonesia" href="#">Indonesia</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tentang</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="https://awoffers.com/id/about.html">Tentang Awoffers</a></li>
+							<li><a class="dropdown-item" href="https://awoffers.com/id/privacy-policy.html">Kebijakan Privasi</a></li>
+							<li><a class="dropdown-item" href="https://awoffers.com/id/terms-and-conditions.html">Syarat Dan Ketentuan</a></li>
+							<li><a class="dropdown-item" href="https://awoffers.com/sitemaps/index.xml">Peta Situs</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Lainnya</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="https://awoffers.com/id/merchants.html">Pedagang</a></li>
+							<li><a class="dropdown-item" href="https://awoffers.com/id/sblog.html">Blog</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 	
-	<div class="coupon-card">
-      <h5><i class="bi bi-tag-fill text-primary"></i> BusOnlineTicket.com</h5>
-      <p>BusOnlineTicket.com adalah portal pemesanan tiket online terpercaya yang memudahkan Anda memesan tiket bus, kereta api, dan feri dengan harga terbaik di Malaysia dan Singapura. Baik Anda ingin pulang kampung atau merencanakan liburan, kami siap membantu Anda.</p>
-      <a href="https://awoffers.com/id/busonlineticket.com.html" class="btn btn-outline-primary">Lihat Penawaran & Kode Kupon</a>
-    </div>
-
-    <div class="coupon-card">
-      <h5><i class="bi bi-tag-fill text-primary"></i> CheapOair</h5>
-      <p>CheapOair adalah agen perjalanan daring yang menawarkan pemesanan penerbangan, hotel, dan mobil sewaan melalui situs web dan aplikasi seluler, serta dukungan telepon 24/7.</p>
-      <a href="https://awoffers.com/id/cheapoair.html" class="btn btn-outline-primary">Lihat Penawaran & Kode Kupon</a>
-    </div>
-  
-  </section>
-
-  <!-- Footer -->
-  <footer class="text-center">
-    <div class="container">
-      <p class="mb-0">&copy; 2025 Awoffers. Semua Hak Dilindungi.</p>
-    </div>
-  </footer>
-
-  <!-- Bootstrap 5.2.3 JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-    
-      const logoEnglish = document.getElementById('logoEnglish');
-      if (logoEnglish) {
-        logoEnglish.href = 'https://awoffers.com/';
-      }
-      
-      const homeEnglish = document.getElementById('homeEnglish');
-      if (homeEnglish) {
-        homeEnglish.href = 'https://awoffers.com/';
-      }
-      
-      const English = document.getElementById('English');
-      if (English) {
-        English.href = 'https://awoffers.com/';
-      }
-      
-      const logoIndonesia = document.getElementById('logoIndonesia');
-      if (logoIndonesia) {
-        logoIndonesia.href = 'https://awoffers.com/id/';
-      }
-      
-      const homeIndonesia = document.getElementById('homeIndonesia');
-      if (homeIndonesia) {
-        homeIndonesia.href = 'https://awoffers.com/id/';
-      }
-      
-      const Indonesia = document.getElementById('Indonesia');
-      if (Indonesia) {
-        Indonesia.href = 'https://awoffers.com/id/';
-      }
-    
-    });
-  </script>
-  
-  <script>
+	<!-- Hero Section -->
+	<section class="hero">
+		<div class="container">
+			<h1 class="display-5"><b>Awoffers</b></h1>
+			<p class="lead">Tempat penawaran dan kode kupon dari berbagai pedagang.</p>
+		</div>
+	</section>
+	
+	<!-- Search Form -->
+	<section class="container py-5">
+		<input type="text" class="form-control" id="searchInput" placeholder="Ketik kata kunci pencarian Anda...">
+	</section>
+	
+	<!-- Search Results -->
+	<section class="container py-5">
+		<div id="results"></div>
+	</section>
+	
+	<!-- Footer -->
+	<footer class="text-center">
+		<div class="container">
+			<p class="mb-0">&copy; 2025 Awoffers. Semua Hak Dilindungi.</p>
+		</div>
+	</footer>
+	
+	<!-- Bootstrap 5.2.3 JS Bundle -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+		
+			const logoEnglish = document.getElementById('logoEnglish');
+			if (logoEnglish) {
+				logoEnglish.href = 'https://awoffers.com/';
+			}
+			
+			const homeEnglish = document.getElementById('homeEnglish');
+			if (homeEnglish) {
+				homeEnglish.href = 'https://awoffers.com/';
+			}
+			
+			const English = document.getElementById('English');
+			if (English) {
+				English.href = 'https://awoffers.com/';
+			}
+			
+			const logoIndonesia = document.getElementById('logoIndonesia');
+			if (logoIndonesia) {
+				logoIndonesia.href = 'https://awoffers.com/id/';
+			}
+			
+			const homeIndonesia = document.getElementById('homeIndonesia');
+			if (homeIndonesia) {
+				homeIndonesia.href = 'https://awoffers.com/id/';
+			}
+			
+			const Indonesia = document.getElementById('Indonesia');
+			if (Indonesia) {
+				Indonesia.href = 'https://awoffers.com/id/';
+			}
+		
+		});
+	</script>
+	
+	<script>
 		const params = new URLSearchParams(window.location.search);
-    const base64Link = params.get('r');
-    if (base64Link) {
-      const originalLink = atob(base64Link);
-      window.location.href = originalLink;
-    }
-    const redirect = params.get('redirect');
-    if (redirect) {
-      window.location.href = redirect;
-    }
-  </script>
+		const base64Link = params.get('r');
+		if (base64Link) {
+			const originalLink = atob(base64Link);
+			window.location.href = originalLink;
+		}
+		const redirect = params.get('redirect');
+		if (redirect) {
+			window.location.href = redirect;
+		}
+	</script>
+	
+	<!-- Search Data (Offers & Coupon Codes) -->
+	<script>
+		const MerchantsDataSearch = [
+			{ "title": "Agoda", "description": "Agoda adalah perusahaan internet yang menyediakan layanan pemesanan hotel atau resor secara online yang berfokus terutama pada kawasan Asia Pasifik, dengan basis operasional di Bangkok, Singapura, dan Filipina.", "keywords": "awoffers, kode kupon agoda, promo terbaru agoda, penawaran diskon agoda, promo agoda hari ini, promo perjalanan agoda, kupon perjalanan agoda, diskon perjalanan agoda", "url": "https://awoffers.com/id/agoda.html" },
+			{ "title": "Alibaba.com", "description": "Alibaba.com adalah platform e-commerce Business-to-Business (B2B) global, yang didirikan pada tahun 1999 oleh Jack Ma, yang menghubungkan jutaan pembeli dan pemasok di seluruh dunia untuk memfasilitasi perdagangan grosir.", "keywords": "awoffers, kode kupon alibaba.com, promo terbaru alibaba.com, penawaran diskon alibaba.com, promo alibaba.com hari ini", "url": "https://awoffers.com/id/alibaba.com.html" },
+			{ "title": "Amazon.com", "description": "Amazon.com adalah perusahaan teknologi multinasional Amerika yang berspesialisasi dalam e-commerce, komputasi awan, dan streaming digital, dan merupakan salah satu pengecer online terbesar di dunia.", "keywords": "awoffers, kode kupon amazon.com, promo terbaru amazon.com, penawaran diskon amazon.com, promo amazon.com hari ini", "url": "https://awoffers.com/id/amazon.com.html" },
+			{ "title": "Booking.com", "description": "Booking.com adalah agen perjalanan online (OTA) utama yang menghubungkan para pelancong dengan penawaran akomodasi, transportasi, dan tur dari seluruh dunia.", "keywords": "awoffers, Kode kupon booking.com, promo terbaru booking.com, penawaran diskon booking.com, promo booking.com hari ini, promo perjalanan booking.com, kupon perjalanan booking.com, diskon perjalanan booking.com", "url": "https://awoffers.com/id/booking.com.html" },
+			{ "title": "BusOnlineTicket.com", "description": "BusOnlineTicket.com adalah portal pemesanan tiket online terpercaya yang menyediakan layanan satu atap untuk memudahkan Anda memesan tiket bus, kereta api, dan feri dengan harga terbaik di Malaysia dan Singapura. Baik Anda ingin pulang kampung atau merencanakan liburan, kami hadir untuk membuat perjalanan Anda bebas repot.", "keywords": "awoffers, Kode kupon busonlineticket.com, promo terbaru busonlineticket.com, penawaran diskon busonlineticket.com, promo busonlineticket.com hari ini", "url": "https://awoffers.com/id/busonlineticket.com.html" },
+			{ "title": "CheapOair", "description": "CheapOair adalah agen perjalanan online yang menawarkan pemesanan penerbangan, hotel, dan sewa mobil melalui situs web dan aplikasi selulernya, serta dukungan telepon 24/7.", "keywords": "awoffers, Kode kupon CheapOair, promo terbaru CheapOair, penawaran diskon CheapOair, promo CheapOair hari ini", "url": "https://awoffers.com/id/cheapoair.html" },
+			{ "title": "Traveloka Australia", "description": "Traveloka adalah platform perjalanan terkemuka di Asia Tenggara, yang menghadirkan pengalaman perjalanan kelas dunia — mulai dari penerbangan dan akomodasi hingga aktivitas perjalanan pilihan dan atraksi lokal, menjadikan setiap perjalanan mudah dan tak terlupakan. Hadir di lebih dari 7 negara dengan lebih dari 50 juta pengguna aktif bulanan, Traveloka adalah solusi lengkap bagi setiap pelancong!", "keywords": "awoffers, kode kupon traveloka australia, promo terbaru traveloka australia, penawaran diskon traveloka australia, promo traveloka australia hari ini", "url": "https://awoffers.com/id/traveloka-au.html" }
+			// { "title": "title", "description": "description", "keywords": "keywords", "url": "url" }
+		];
+		
+		const searchInput = document.getElementById('searchInput');
+		const resultsContainer = document.getElementById('results');
+		// Function to display search data
+		function displayResults(items) {
+			resultsContainer.innerHTML = items.map(item => `<div class="coupon-card"><h5><i class="bi bi-tag-fill text-primary"></i> ${item.title}</h5><p>${item.description}</p><a href="${item.url}" class="btn btn-outline-primary">View Offers & Coupon Codes</a></div>`).join('');
+		}
+		// Data search function
+		searchInput.addEventListener('input', (e) => {
+			const keyword = e.target.value.toLowerCase(); // Take input & convert it to lowercase
+			// const filteredData = MerchantsDataSearch.filter(item => item.description.toLowerCase().includes(keyword) || item.keywords.toLowerCase().includes(keyword));
+			const q = keyword.toLowerCase();
+			const filteredData = MerchantsDataSearch.filter(item => {
+				return (item.title?.toLowerCase().includes(q) || item.description?.toLowerCase().includes(q) || item.keywords?.toLowerCase().includes(q));
+			});
+			displayResults(filteredData);
+		});
+		// Show all data when first loaded
+		displayResults(MerchantsDataSearch);
+	</script>
 
 </body>
 </html>
