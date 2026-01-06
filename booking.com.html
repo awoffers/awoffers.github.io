@@ -185,56 +185,6 @@
 	</script>
 	
 	<script>
-		// Toggle coupon code visibility ELITE_DEAL
-		const button_ELITE_DEAL = document.getElementById('button_ELITE_DEAL');
-		const viewcode_ELITE_DEAL = document.getElementById('viewcode_ELITE_DEAL');
-		button_ELITE_DEAL.addEventListener('click', function() {
-				viewcode_ELITE_DEAL.style.display = viewcode_ELITE_DEAL.style.display === 'none' ? 'block' : 'none';
-				window.open("https://awoffers.com/booking.com.html?r=aHR0cHM6Ly93d3cuYWdvZGEuY29tL2FmZmlsaWF0ZT9jamRhdGE9TVh4T2ZEQjhXWHd3JnRhZz0zY2IzYzI1NDk2MDQxMWYwODFlNzAwM2YwYTE4YjhmYiZwdWJsaXNoZXI9NDEzNzQ5OSZwaWQ9NzI3ODI0MiZjaWQ9MTg0MTk0NCZwc2xjPTEmZHM9eE54dVo3eHlwJTJGa0lvUERN", "_blank");
-		});
-		
-		// Copy code to clipboard ELITE_DEAL
-		document.getElementById('clipboard_ELITE_DEAL').addEventListener('click', function () {
-				const code_ELITE_DEAL = document.getElementById('code_ELITE_DEAL').innerText;
-				if (!code_ELITE_DEAL.trim()) {
-						alert("There are no results to copy.");
-						return;
-				}
-				navigator.clipboard.writeText(code_ELITE_DEAL).then(() => {
-						alert("Results successfully copied to clipboard!");
-				})
-				.catch((err) => {
-						console.error("Failed to copy:", err);
-						alert("Failed to copy to clipboard.");
-				});
-		});
-		
-		// Toggle coupon code visibility AGODADEAL8
-		const buttonAGODADEAL8 = document.getElementById('buttonAGODADEAL8');
-		const viewcodeAGODADEAL8 = document.getElementById('viewcodeAGODADEAL8');
-		buttonAGODADEAL8.addEventListener('click', function() {
-				viewcodeAGODADEAL8.style.display = viewcodeAGODADEAL8.style.display === 'none' ? 'block' : 'none';
-				window.open("https://awoffers.com/booking.com.html?r=aHR0cHM6Ly93d3cuYWdvZGEuY29t", "_blank");
-		});
-		
-		// Copy code to clipboard AGODADEAL8
-		document.getElementById('clipboardAGODADEAL8').addEventListener('click', function () {
-				const codeAGODADEAL8 = document.getElementById('codeAGODADEAL8').innerText;
-				if (!codeAGODADEAL8.trim()) {
-						alert("There are no results to copy.");
-						return;
-				}
-				navigator.clipboard.writeText(codeAGODADEAL8).then(() => {
-						alert("Results successfully copied to clipboard!");
-				})
-				.catch((err) => {
-						console.error("Failed to copy:", err);
-						alert("Failed to copy to clipboard.");
-				});
-		});
-	</script>
-	
-	<script>
 		const params = new URLSearchParams(window.location.search);
 		const base64Link = params.get('r');
 		if (base64Link) {
